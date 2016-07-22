@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Blogs</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/mystyle.css">
+    <link rel="stylesheet" href="/static/css/flat-ui.min.css">
+    <script type="text/javascript" src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/mystyle.js"></script>
+
+    <style>
+        .blog {
+            padding: 20px 0px;
+        }
+        .blog .info span {
+            padding-right: 10px;
+        }
+        .blog .summary {
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#EEE">
+    <nav class="navbar navbar-default navbar-Amethyst" role="navigation" style="margin:10px 0px;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+            <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="/">Hilaopo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-01">
+            <ul class="nav navbar-nav">
+                <li></li>
+                <li class="active"><a href="/">MYBLOG</a></li>
+                <li><a href="/about">ABOUT</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="signin_icon"><a href="#">SIGNIN</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+    </nav><!-- /navbar -->
+
+    {% block body %}{% endblock %}
+
+    <div style="background:#000000 none repeat scroll 0% 0%;color:#8293A5">
+        <div class="container">
+            <div class="row" style="padding-top:30px;">
+                <div class="col-md-7">
+                    <p class="lead"> Designed by LCH</p>
+                </div>
+                <div class="col-md-5">
+                    <div>
+                        <h5 style="margin-bottom:15px;margin-left:18px;"><strong>CONTACT ME</strong></h5>
+                        <ul>
+                            <li><a href="https://github.com/lch0000"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>&nbsp GITHUB: &nbsp<strong>https://github.com/lch0000</strong></a></li>
+                            <li><a href="#"><span class=" glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp EMAIL: &nbsp<strong>lch_mail@hotmail.com</strong></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                        <p> <small>© COPYRIGHT BY LCH 2016</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
